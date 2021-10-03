@@ -1,0 +1,37 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+main{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+
+    grid-template: repeat(4,50px) / repeat(3,1fr);
+    /* row axis */
+    justify-items:stretch;
+
+}   
+
+main > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}   
+
+/* main > div:nth-child(5){
+    background-color: purple;
+    justify-self: end;
+    align-self: center;
+} */
+main > div:nth-child(1){
+    background-color: purple;
+    justify-self: end;
+    align-self: stretch;
+}
+main > div:nth-child(3){
+    background-color: purple;
+    justify-self: start;
+    align-self: stretch;
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grid-1{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+}   
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-1 > div {
+    background-color: goldenrod;
+}    
+
+/* grid-2 */
+
+#grid-1 > div:nth-child(5){
+    background-color: #fff;
+    display: block;
+}
+
+#grid-2{
+    display: grid;
+    grid-gap: 20px;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#grid-2 > div{
+    background-color: pink;
+}

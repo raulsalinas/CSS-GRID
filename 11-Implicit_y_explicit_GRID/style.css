@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px 100px;
+    /* repeat, minmax, patrones, etc */
+    grid-auto-columns: 600px;
+    grid-auto-flow: column;
+}   
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: goldenrod;
+}   
+
+div:first-of-type, div:nth-child(2){
+    background-color: red;
+}

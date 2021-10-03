@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    display: grid;
+    grid-gap: 10px;
+    margin: 20px 0;
+
+}   
+
+div{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}   
+
+.auto-fill div{
+    background-color: slateblue;
+    color: whitesmoke;
+
+}
+
+.auto-fit div{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.auto-fill{
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+}
+
+.auto-fit{
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+
+}

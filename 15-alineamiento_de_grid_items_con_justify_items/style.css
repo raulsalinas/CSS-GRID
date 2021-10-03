@@ -1,0 +1,28 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+main{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+
+    grid-template: 
+    /* filas */
+        /* repeat(4,50px)
+        /
+        repeat(3,1fr) */
+    repeat(4,50px) / repeat(3,1fr)
+    ;
+    /* justify-items:start; */
+    /* justify-items:center; */
+    /* justify-items:end; */
+    justify-items:stretch;
+}   
+
+main > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}   

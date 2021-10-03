@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr)    ;
+    grid-template-rows: repeat(3,1fr);
+
+}   
+
+main > *{
+    font-family: sans-serif;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+@media (max-width: 991.98px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+
+    }
+}
+
+@media (max-width: 575.98px){
+    main{
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(9,1fr);
+
+    }
+}

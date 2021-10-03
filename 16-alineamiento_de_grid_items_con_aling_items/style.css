@@ -1,0 +1,25 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+main{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+
+    grid-template: repeat(4,50px) / repeat(3,1fr);
+    /* row axis */
+    justify-items:stretch;
+    /* column axis */
+    /* align-items: start; */
+    align-items: center;
+    /* align-items: end; */
+    /* align-items: stretch; */
+}   
+
+main > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}   
